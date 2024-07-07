@@ -7,7 +7,7 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node netlify/functions/server.js",
-    "build": "echo 'Build script running...'",
+    "build": "echo 'Running build process...'",
     "deploy": "netlify deploy --prod"
   },
   "keywords": [],
@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@netlify/functions": "^2.8.1",
+    "@opentelemetry/api": "^1.0.0",
     "bcrypt": "^5.1.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
