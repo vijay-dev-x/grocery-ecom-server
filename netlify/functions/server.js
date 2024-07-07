@@ -31,7 +31,7 @@ app.use((err, req, res, next) => {
 app.use(cookiParser());
 // route--
 app.get("/", (req, res) => {
-  res.send(" ecom groccary");
+  res.send(" ecom groccary 2");
 });
 
 // // Listen--
