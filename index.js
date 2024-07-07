@@ -5,11 +5,17 @@ const connectDB = require("./config/DBconfig.js");
 const userRoute = require("./routes/userRoute.js");
 const productRoute = require("./routes/producRoute.js");
 const cookiParser = require("cookie-parser");
+const Razorpay = require("razorpay");
 
 const app = express();
 const PORT = 8000;
 
-// console.log(process.env.TEST);
+const instance = new Razorpay({
+  key_id: process.env.key_id,
+  key_secret: process.env.key_secret,
+});
+
+// console.log("env", process.env.key_id);
 
 // middleware--
 app.use(cors({ origin: "*" }));
